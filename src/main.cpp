@@ -33,14 +33,6 @@ int main() {
 	Character scav;
 	scav.rollAttributes();
 	scav.printAllAttr();
-/*
-	cout << "Str: " << scav.getAttrScore(STR) << '(' << scav.getAttrMod(STR) << ")\n";
-	cout << "Int: " << scav.getAttrScore(INT) << '(' << scav.getAttrMod(INT) << ")\n";
-	cout << "Wis: " << scav.getAttrScore(WIS) << '(' << scav.getAttrMod(WIS) << ")\n";
-	cout << "Dex: " << scav.getAttrScore(DEX) << '(' << scav.getAttrMod(DEX) << ")\n";
-	cout << "Con: " << scav.getAttrScore(CON) << '(' << scav.getAttrMod(CON) << ")\n";
-	cout << "Cha: " << scav.getAttrScore(CHA) << '(' << scav.getAttrMod(CON) << ")\n";
-*/
 
 
 	/*int s = 0;
