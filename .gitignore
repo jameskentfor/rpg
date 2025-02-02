@@ -10,3 +10,9 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 CMakeUserPresets.json
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
