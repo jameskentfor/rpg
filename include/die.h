@@ -8,4 +8,6 @@ public:
 	Die(int s);
 	int rollDie();
 	int rollDie(int rolls);
+	int rollDieClassic();
+	void testDie();
 };
