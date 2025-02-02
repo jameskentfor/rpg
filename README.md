@@ -8,6 +8,5 @@
 to run enter RPG in the command line
 
 # TODO
----
 
  ~~- Change the use of std::rand to new random library~~
