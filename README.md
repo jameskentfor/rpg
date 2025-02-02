@@ -8,5 +8,14 @@
 to run enter RPG in the command line
 
 # TODO
+- Classes
+   - Hit Dice
+   - Experience needed to level
+- Inventory
+   - Items
+   - Encumberance
+   - Value
+- Combat
+   - Random Encounters
 
  ~~- Change the use of std::rand to new random library~~
