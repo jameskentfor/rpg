@@ -3,6 +3,7 @@
 #include <limits>
 #include "die.h"
 #include "character.h"
+#include "item.h"
 
 using namespace std;
 
@@ -10,9 +11,10 @@ int menu() {
 	int menuItem;
 	cout << "1. Create Character\n";
 	cout << "2. Roll a Die\n";
-	cout << "3. Quit\n";
+	cout << "3. Item Creation\n";
+	cout << "4. Quit\n";
 	cout << "----------\n";
-	while (!(cin >> menuItem) || !(menuItem == 1 || menuItem == 2 || menuItem== 3)) {
+	while (!(cin >> menuItem) || (menuItem < 0 || menuItem > 4)) {
 		cout << "Invalid input. Please enter a valid menu item: ";
 		cin.clear();
 		cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -62,6 +64,10 @@ int main() {
 			cout << "Total: " << total << '\n' << '\n';
 			continue_program = cont();
 		} else if (menuChoice == 3) {
+			Item rattler("Rattler", 15.00, 150);
+			rattler.display();
+			continue_program = cont();
+		} else if (menuChoice == 4) {
 			continue_program = false;
 		} else {
 			cout << "Please choose a valid menu item.\n";
