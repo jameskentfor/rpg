@@ -2,8 +2,25 @@ cmake_minimum_required(VERSION 3.31.4)
 
 project(RPG)
 
-add_executable(${PROJECT_NAME} main.cpp die.cpp ../include/die.h character.cpp ../include/character.h)
+file(GLOB SRC_FILES
+	"*.cpp"
+)
 
-target_include_directories(${PROJECT_NAME} PRIVATE ../include)
+set(INC_FILES_DIR
+	../include
+)
+
+set(SOURCE_FILES
+	SRC_FILES
+)
+
+
+add_executable(${PROJECT_NAME} ${SRC_FILES})
+
+target_include_directories(
+	${PROJECT_NAME} 
+	PRIVATE 
+	${INC_FILES_DIR}
+)
 
 install(TARGETS ${PROJECT_NAME} DESTINATION bin)
