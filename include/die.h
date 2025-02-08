@@ -10,4 +10,5 @@ public:
 	int rollDie(int rolls);
 	int rollDieClassic();
 	void testDie();
+	int getSides();
 };

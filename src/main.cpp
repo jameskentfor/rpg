@@ -4,6 +4,8 @@
 #include "die.h"
 #include "character.h"
 #include "item.h"
+#include "weapon.h"
+
 
 using namespace std;
 
@@ -64,8 +66,9 @@ int main() {
 			cout << "Total: " << total << '\n' << '\n';
 			continue_program = cont();
 		} else if (menuChoice == 3) {
-			Item rattler("Rattler", 15.00, 150);
-			rattler.display();
+			Weapon w1("Revolver", 1.00, 50, TL2, 8, 1, 30, 100, 6, DEX);
+			w1.display();
+			cout << "Die: " << w1.getDmgDieRolls() << 'D' << w1.getSides() << '\n' << "Result: " << w1.rollDie(w1.getDmgDieRolls()) << '\n';
 			continue_program = cont();
 		} else if (menuChoice == 4) {
 			continue_program = false;

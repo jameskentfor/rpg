@@ -28,6 +28,10 @@ int Die::rollDieClassic() {
 	return std::rand() % sides + 1;
 }
 
+int Die::getSides() {
+	return sides;
+}
+
 void Die::testDie() {
 	std::map<int, int> m{{1,0}, {2,0}, {3,0}, {4,0}, {5,0}, {6,0}};
 	for (int i = 0; i < 10000000; i++) {

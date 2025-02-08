@@ -2,8 +2,7 @@
 #include <utility>
 #include <map>
 #include <string>
-
-enum Attributes {STR, INT, WIS, DEX, CON, CHA, ATTR_COUNT};
+#include "enums.h"
 
 static const std::map<Attributes,std::string> attrStr{
 	{STR, "Str"},
